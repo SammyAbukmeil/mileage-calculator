@@ -35,7 +35,7 @@ export default function Home() {
   return (
     <main className="m-5 text-center">
       <button onClick={addNewMile} className="bg-amber-300 p-4 sticky top-0">
-        Add new milage
+        Add new mileage
       </button>
       <section className="my-5">
         {miles.map((mile) => {
