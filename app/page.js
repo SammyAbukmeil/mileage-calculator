@@ -42,22 +42,25 @@ export default function Home() {
           return (
             <article className="my-3" key={mile.id}>
               <label>
-                Miles:
+                <span className="mr-3">Miles:</span>
                 <input
                   type="number"
-                  className="border-2 ml-2 p-2"
+                  className="border-2 ml-2 p-2 w-12 text-center"
                   onChange={(e) => updateMile(e, mile.id)}
                   autoFocus
                   onKeyUp={handleKeyPress}
                 />
+                <span className="pl-3 font-black">
+                  £{(mile.value * 0.45).toFixed(2)}
+                </span>
               </label>
             </article>
           );
         })}
       </section>
       <section className="mb-16">
-        <h2>Total:</h2>
-        <p className="text-xl">£{total.toFixed(2)}</p>
+        <h2>Total cost:</h2>
+        <p className="text-xl font-black">£{total.toFixed(2)}</p>
       </section>
       <section className="pt-16 border-t-4	">
         <h3>Note:</h3>
