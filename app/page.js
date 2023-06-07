@@ -45,7 +45,7 @@ export default function Home() {
                 <span className="mr-3">Miles:</span>
                 <input
                   type="number"
-                  className="border-2 ml-2 p-2 w-12 text-center"
+                  className="border-2 ml-2 p-2 w-24 text-center"
                   onChange={(e) => updateMile(e, mile.id)}
                   autoFocus
                   onKeyUp={handleKeyPress}
